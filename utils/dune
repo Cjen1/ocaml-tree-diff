@@ -1,0 +1,6 @@
+(library
+    (name utils)
+    (libraries lib jsondiff core sexplib)
+    (preprocess (pps ppx_jane))
+    )
+

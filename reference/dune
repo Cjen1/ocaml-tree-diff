@@ -1,0 +1,5 @@
+(executable
+    (name reference)
+    (libraries lib utils core sexplib jsondiff minicli)
+    (preprocess (pps ppx_jane))
+    )

@@ -1,0 +1,14 @@
+(library
+  (name jsondiff)
+  (libraries lib core sexplib)
+  (preprocess (pps ppx_jane))
+  )
+
+(menhir
+  (modules parser))
+
+(ocamllex (modules lexer))
+
+(env 
+    (dev
+        (flags (:standard -warn-error -A))))

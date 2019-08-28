@@ -1,0 +1,6 @@
+(library
+    (name datasets)
+    (libraries lib utils core sexplib)
+    (preprocess (pps ppx_jane))
+    )
+

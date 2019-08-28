@@ -1,0 +1,5 @@
+(executable
+    (name test)
+    (libraries lib utils core core_bench sexplib jsondiff)
+    (preprocess (pps ppx_jane))
+    )
